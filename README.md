@@ -9,7 +9,12 @@ This repository documents the philosophy for process and maintenance of my open 
 1. [Terminology](#Terminology)
 2. [VCS Strategy](#VCS-Strategy)
 3. [Versioning](#Versioning)
-4. [Automations](#Automations)
+4. [Dependencies](#Dependencies)
+5. [Testing](#Testing)
+6. [Static Analysis and Formatting](#Static-Analysis-and-Formatting)
+7. [Releases](#Releases)
+8. [Appendix](#Appendix)
+    1. [Automations](#Automations)
 
 ## Terminology
 
@@ -53,3 +58,16 @@ Projects that use [SemVer](https://semver.org) often leak breaking changes into 
 - **BUG** - This is a bug fix that only touches private internals and brings actual behavior inline with documented behavior.
 
 (TODO Version tooling)
+
+
+## Dependencies
+
+## Testing
+
+## Static Analysis and Formatting
+
+## Releases
+
+## Appendix
+
+### Automations
