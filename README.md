@@ -25,7 +25,9 @@ Open source ecosystems have a natural flow. Many projects build on foundational 
 
 I use the git branching strategy [described by Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/).
 
-<img src="https://nvie.com/img/git-model@2x.png" alt="Branching strategy" width="75%"/>
+<div align="center">
+    <img src="https://nvie.com/img/git-model@2x.png" alt="Branching strategy" width="75%"/>
+</div>
 
 
 ### TODO
