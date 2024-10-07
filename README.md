@@ -23,9 +23,10 @@ Open source ecosystems have a natural flow. Many projects build on foundational 
 
 ## VCS Strategy
 
-I use the [strategy described by](https://nvie.com/posts/a-successful-git-branching-model/).
+I use the git branching strategy [described by Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/).
 
-![Branch Strategy](https://nvie.com/img/git-model@2x.png)
+<img src="https://nvie.com/img/git-model@2x.png" alt="Branching strategy" width="75%"/>
+
 
 ### TODO
 
