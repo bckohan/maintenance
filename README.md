@@ -7,7 +7,7 @@ This repository documents the philosophy for process and maintenance of my open 
 * Custom Python tooling to support both of the above
 
 1. [Terminology](#Terminology)
-2. [VCS Strategy](#VCSStrategy)
+2. [VCS Strategy](#VCS-Strategy)
 3. [Versioning](#Versioning)
 4. [Automations](#Automations)
 
