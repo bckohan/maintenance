@@ -37,7 +37,7 @@ I use the git branching strategy [described by Vincent Driessen](https://nvie.co
 
 ## Versioning
 
-There are two widely used versioning strategies for open source libraries:
+There are two widely used versioning strategies for open source libraries::
 
     * **Semantic** [SemVer](https://semver.org)
     * **Calendar** [CalVer](https://calver.org)
