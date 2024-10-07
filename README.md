@@ -21,18 +21,18 @@ Open source ecosystems have a natural flow. Many projects build on foundational 
 * **Upstream** From the perspective of a given package, any direct dependency or ancestor of a direct dependency.
 * **Downstream** From the perspective of a given package, any direct user or descendent of a direct user.
 
+(TODO diagram)
+
 ## VCS Strategy
 
-I use the git branching strategy [described by Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/).
+I use the git branching strategy [described by Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/) with some modification to support automated administrative PR merging (TODO explain).
 
 <div align="center">
     <img src="https://nvie.com/img/git-model@2x.png" alt="Branching strategy" width="75%"/>
 </div>
 
 
-### TODO
-
-    - [ ] CLI tooling for this strategy
+(TODO CLI tooling and cheat sheet for this strategy)
 
 
 ## Versioning
@@ -42,7 +42,7 @@ There are two widely used versioning strategies for open source libraries:
 * **Semantic** [SemVer](https://semver.org)
 * **Calendar** [CalVer](https://calver.org)
 
-**All of my projects use [SemVer](https://semver.org)**. Calendar based versioning can [make sense in some contexts](https://calver.org/#when-to-use-calver), but for most ecosystem projects the clarity of [SemVer](https://semver.org) is more useful. [CalVer](https://calver.org) may be more appropriate for applications that are not expected to be upstream of any other software or for some monolithic frameworks that do not expect a big middlestream tier directly downstream of them.
+**All of my projects use [SemVer](https://semver.org)**. Calendar based versioning can [make sense in some contexts](https://calver.org/#when-to-use-calver), but for most highly connected ecosystem projects the clarity of [SemVer](https://semver.org) is more useful. [CalVer](https://calver.org) may be more appropriate for applications that are not expected to be upstream of any other software or for some monolithic frameworks that do not expect a big middlestream tier directly downstream of them.
 
 The semantics of [CalVer](https://calver.org) can very from project to project. This increases the amount of work you have to do to figure out how to specify a version range on a dependency and because of this will promote very restrictive or exact version match dependency specifiers in middlestream software. This is fine for one-offs, but as the number of middlestream projects using [CalVer](https://calver.org) increases, the potential for version range conflicts between dependencies grows in your middlestream tier. [SemVer](https://semver.org) makes more sense for packages that have a high degree of dependency edges in their ecosystem graph.
 
@@ -52,7 +52,4 @@ Projects that use [SemVer](https://semver.org) often leak breaking changes into 
 - **FEATURE** - This change adds new functionality to a previous version but there is a reasonable likelihood that it will not break downstream software.
 - **BUG** - This is a bug fix that only touches private internals and brings actual behavior inline with documented behavior.
 
-### TODO
-
-    - [ ] Version tooling
-
+(TODO Version tooling)
