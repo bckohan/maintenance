@@ -42,10 +42,15 @@ There are two widely used versioning strategies for open source libraries:
 * **Semantic** [SemVer](https://semver.org)
 * **Calendar** [CalVer](https://calver.org)
 
-**All of my projects use [SemVer](https://semver.org)**. I do not put much value into getting a date signal from a version number. If I am curious I will go look it up. ([CalVer](https://calver.org) may be more appropriate for applications that are not expected to be upstream of any other software or for some monolithic frameworks that do not expect a big middlestream tier directly downstream of them.
+**All of my projects use [SemVer](https://semver.org)**. I do not put much value into getting a date signal from a version number. If I am curious I will go look it up. [CalVer](https://calver.org) may be more appropriate for applications that are not expected to be upstream of any other software or for some monolithic frameworks that do not expect a big middlestream tier directly downstream of them.
 
-([CalVer](https://calver.org) is not appropriate for middlestream projects because the semantics of the version specifiers can very from project to project. This increases the amount of work you have to do to figure out how to specify a version range on a dependency and because of this will promote very restrictive or exact version match dependency specifiers in middlestream software. This is fine for one-offs, but as the number of middlestream projects using CalVer increases, the potential for version range conflicts between dependencies grows in your middlestream tier.
+[CalVer](https://calver.org) is not appropriate for middlestream projects because the semantics of the version specifiers can very from project to project. This increases the amount of work you have to do to figure out how to specify a version range on a dependency and because of this will promote very restrictive or exact version match dependency specifiers in middlestream software. This is fine for one-offs, but as the number of middlestream projects using CalVer increases, the potential for version range conflicts between dependencies grows in your middlestream tier.
 
+One argument I have heard a lot for [CalVer](https://calver.org) is that [SemVer](https://semver.org) versions are often lying to you. This may be true, but when specifying version ranges on dependencies it still dramatically decreases the likelihood of breaking changes on stack updates. Even if it occasionally doesn't work, it works well enough in my experience to be valuable. Instead, we should endeavour to be better about adhering to [SemVer](https://semver.org). To that end I use a tagging system for all feature PRs merged into develop:
+
+- **BREAKING** - This change requires a major version update because there is a reasonable likelihood that it could break downstream software.
+- **FEATURE** - This change adds new functionality to a previous version but there is a reasonable likelihood that it will not break downstream software.
+- **BUG** - This is a bug fix that only touches private internals and brings actual behavior inline with documented behavior.
 
 ### TODO
 
