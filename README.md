@@ -1,4 +1,4 @@
-# maintenance
+# OSS Package Maintenance
 
 This repository documents the philosophy for process and maintenance of my open source projects, including automation strategies. The goal is a standard process and tooling that makes upkeep and routine releases of open source projects as automated and painless as possible. This repository houses a mix of:
 
