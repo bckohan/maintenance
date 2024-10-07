@@ -39,8 +39,8 @@ I use the git branching strategy [described by Vincent Driessen](https://nvie.co
 
 There are two widely used versioning strategies for open source libraries:
 
-    - [Semantic versioning [SemVer](https://semver.org)
-    - [Calendar versioning [CalVer](https://calver.org)
+    - [Semantic versioning (SemVer)](https://semver.org)
+    - [Calendar versioning (CalVer)](https://calver.org)
 
 **All of my projects use [SemVer](https://semver.org)**. I do not put much value into getting a date signal from a version number. If I am curious I will go look it up. ([CalVer](https://calver.org) may be more appropriate for applications that are not expected to be upstream of any other software or for some monolithic frameworks that do not expect a big middlestream tier directly downstream of them.
 
