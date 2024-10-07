@@ -6,6 +6,11 @@ This repository documents the philosophy for process and maintenance of my open 
 * Reusable github actions that automate routine tasks
 * Custom Python tooling to support both of the above
 
+1. [Terminology](#Terminology)
+2. [VCS Strategy](#VCSStrategy)
+3. [Versioning](#Versioning)
+4. [Automations](#Automations)
+
 ## Terminology
 
 Open source ecosystems have a natural flow. Many projects build on foundational frameworks and incorporate extensions to those frameworks along the way to a realized application. Where a given piece of software is in this flow will have implications for its versioning, testing and dependency specification. I tend to use the following terminology:
@@ -16,7 +21,7 @@ Open source ecosystems have a natural flow. Many projects build on foundational 
 * **Upstream** From the perspective of a given package, any direct dependency or ancestor of a direct dependency.
 * **Downstream** From the perspective of a given package, any direct user or descendent of a direct user.
 
-## Git Branching Strategy
+## VCS Strategy
 
 I use the [strategy described by](https://nvie.com/posts/a-successful-git-branching-model/).
 
